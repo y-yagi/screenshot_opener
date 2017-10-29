@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+
+gem 'rake'
+gem 'capybara'
+gem 'puma'
+gem 'selenium-webdriver'
+gem 'actionpack', '~> 5.1.0'
+gem 'activesupport', '~> 5.1.0'
