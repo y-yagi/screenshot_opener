@@ -31,6 +31,11 @@ module ScreenshotOpener
     end
 end
 
-# TODO: should use load hooks.
-ActionDispatch::SystemTestCase.include(ScreenshotOpener)
+if ActionPack.version >= Gem::Version.new("5.2.0")
+  ActiveSupport.on_load(:action_dispatch_system_test_case) do
+    self.include(ScreenshotOpener)
+  end
+else
+  ActionDispatch::SystemTestCase.include(ScreenshotOpener)
+end
 ENV["RAILS_SYSTEM_TESTING_SCREENSHOT"] ||= "simple"
