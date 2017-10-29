@@ -1,5 +1,8 @@
 # ScreenshotOpener
 
+[![Build Status](https://travis-ci.org/y-yagi/screenshot_opener.svg?branch=master)](https://travis-ci.org/y-yagi/screenshot_opener)
+[![Gem Version](https://badge.fury.io/rb/screenshot_opener.svg)](http://badge.fury.io/rb/screenshot_opener)
+
 Automatically open a screenshot when System Test fails.
 
 Rails' System Test gets screenshots automatically when the test fails and displays it on the terminal. However, its display is premised on iTerm, it will not be displayed on other terminals.
