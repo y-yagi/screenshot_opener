@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rake'
-gem 'capybara'
+gem 'capybara', '~> 2.13'
 gem 'puma'
 gem 'selenium-webdriver'
 gem 'actionpack', '~> 5.1.0'
